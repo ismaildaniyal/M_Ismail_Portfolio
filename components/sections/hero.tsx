@@ -6,10 +6,6 @@ import { ArrowDown, Download, Github, Linkedin, Mail, Twitter } from "lucide-rea
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { FaFiverr, FaMedium } from "react-icons/fa";
-
-const Fiverr = FaFiverr;
-const Medium = FaMedium;
 export default function Hero() {
   const words = [
     { text: "I'm" },
@@ -122,8 +118,7 @@ export default function Hero() {
             { icon: Linkedin, href: "https://www.linkedin.com/in/ismail-sarfraz/", label: "LinkedIn" },
             // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
             { icon: Mail, href: "mailto:ismailsarfraz9345@gmail.com", label: "Email" },
-          { icon: Fiverr, href: "https://www.fiverr.com/ismail_sarfraz", label: "Fiverr" },
-          { icon: Medium, href: "https://medium.com/@ismail.sarfraz", label: "Medium" },
+         
           ].map((social, index) => (
             <motion.div
               key={social.label}
