@@ -74,8 +74,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-             I specialize in building accessible, user-friendly web applications using modern technologies like React, Next.js, TensorFlow, and Docker. Passionate about delivering innovative solutions to complex problems and collaborating effectively across teams.
-          </motion.p>
+             I specialize in building accessible, user-friendly web applications using modern technologies like React, Next.js, TensorFlow, and Docker. <br />Passionate about solving complex problems with AI, Machine Learning, and Generative AI, and delivering innovative solutions through seamless collaboration and technical excellence.
+             </motion.p>
         </motion.div>
 
         <motion.div
@@ -119,6 +119,7 @@ export default function Hero() {
             { icon: Linkedin, href: "https://www.linkedin.com/in/ismail-sarfraz/", label: "LinkedIn" },
             // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
             { icon: Mail, href: "mailto:ismailsarfraz9345@gmail.com", label: "Email" },
+            
           ].map((social, index) => (
             <motion.div
               key={social.label}

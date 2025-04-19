@@ -82,8 +82,7 @@ export default function About() {
                       <span className="text-sm text-muted-foreground">2023 - Present</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                    I am building AI bots and training models for my semester project, focusing on solving real-world problems. I guide junior developers and follow best practices in AI/ML and full-stack development
-                   </p>
+                    I build AI-powered bots, intelligent agents, and automation systems to solve complex real-world problems through web-based interfaces. My work spans across AI/ML, full-stack development, and bot automation, using modern tools and best practices. I also mentor junior developers and collaborate effectively across teams to deliver high-impact, scalable solutions.  </p>
                   </CardContent>
                 </Card>
                 <Card>
@@ -93,7 +92,7 @@ export default function About() {
                       <span className="text-sm text-muted-foreground">2024 - present</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      Developed and maintained web applications using React, Node.js, and Docker.
+                      Developed, and maintained scalable web applications using React, Node.js, and Docker, while integrating Machine Learning, AI, and Generative AI components. Applied DevOps best practices for continuous integration, deployment, and efficient model delivery in production environments.
                     </p>
                   </CardContent>
                 </Card>
@@ -104,8 +103,14 @@ export default function About() {
                     <span className="text-sm text-muted-foreground">2022 - Present</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Data Structures (2022), Social Networking (2024), and currently supporting Web Development and Design and Analysis of Algorithms.
-                  </p>
+                      FAST-NUCES  
+                     <br /> • <strong>Data Structures</strong> – <em>Fall 2022</em>  
+                     <br /> • <strong>Social Networking</strong> – <em>Spring 2024</em>  
+                      <br />• <strong>Web Development</strong>, <strong>Design and Analysis of Algorithms</strong> – <em>Ongoing</em>  
+                     <br /> ○ Conducted tutorials, prepared assessments, and offered dedicated academic support to help students grasp software engineering, algorithmic problem-solving, and web technologies.  
+                     <br /> ○ Supported over <strong>300+ students</strong>, consistently earning positive feedback for technical expertise and mentoring.
+                    </p>
+
                   
                 </CardContent>
               </Card>
