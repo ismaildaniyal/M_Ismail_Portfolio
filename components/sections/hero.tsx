@@ -6,7 +6,6 @@ import { ArrowDown, Download, Github, Linkedin, Mail, Twitter } from "lucide-rea
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ThemeToggle } from "@/components/theme-toggle"
-
 export default function Hero() {
   const words = [
     { text: "I'm" },
@@ -120,6 +119,7 @@ export default function Hero() {
             // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
             { icon: Mail, href: "mailto:ismailsarfraz9345@gmail.com", label: "Email" },
             
+         
           ].map((social, index) => (
             <motion.div
               key={social.label}
