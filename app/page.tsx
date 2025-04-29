@@ -11,6 +11,7 @@ import Achievements from "@/components/sections/achievements"
 import Contact from "@/components/sections/contact"
 import Footer from "@/components/sections/footer"
 import Navbar from "@/components/navbar"
+// import Testimonials from "@/components/sections/testominals"
 import { useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FloatingThemeToggle } from "@/components/floating-theme-toggle"
@@ -59,6 +60,7 @@ export default function Home() {
           <Projects />
           <Experience />
           <Achievements />
+          {/* <Testimonials /> */}
           <Contact />
         </main>
         <Footer />

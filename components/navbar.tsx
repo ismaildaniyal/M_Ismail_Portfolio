@@ -35,7 +35,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Portfolio
+            M ISMAIL DANIYAL
           </motion.span>
         </Link>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               <ThemeToggle />
               <Button asChild>
-                <a href="/resume.pdf" download>
+                <a href="/MuhammadIsmailDaniyal_Resume(3).pdf" download>
                   Resume
                 </a>
               </Button>

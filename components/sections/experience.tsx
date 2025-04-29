@@ -7,13 +7,11 @@ import { motion } from "framer-motion"
 const experiences = [
   {
     id: 1,
-    role: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    duration: "Jan 2021 - Present",
+    role: "Software Engineer",
+    duration: "Jan 2024 - 2024",
     description: "Leading a team of developers to build scalable cloud solutions.",
     responsibilities: [
-      "Architected and implemented microservices using Node.js and Docker",
-      "Led migration from monolithic architecture to microservices",
+      "Designed and deployed microservices using Node.js and Docker, improving system scalability and maintainability.",
       "Mentored junior developers and conducted code reviews",
       "Implemented CI/CD pipelines using GitHub Actions",
       "Reduced API response time by 40% through optimization",
@@ -21,30 +19,32 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Software Developer",
-    company: "WebSolutions Co.",
-    duration: "Mar 2018 - Dec 2020",
-    description: "Developed and maintained web applications for enterprise clients.",
-    responsibilities: [
-      "Built responsive web applications using React and Redux",
-      "Developed RESTful APIs using Node.js and Express",
-      "Implemented authentication and authorization using JWT",
-      "Collaborated with UX designers to implement pixel-perfect designs",
-      "Participated in agile development processes",
-    ],
+    role: "Python Programming Intern",
+  company: "HiskyTech",
+  duration: "Jul 2024 - Aug 2024",
+  description: "Contributed to a Python-based project, completing tasks within strict deadlines to support real-world problem-solving.",
+  responsibilities: [
+    "Developed Python scripts to automate workflows, enhancing project efficiency",
+    "Collaborated with team members via WhatsApp to receive and deliver project updates",
+    "Completed assigned tasks within the specified time frame, ensuring internship requirements were met",
+    "Engaged in learning opportunities to deepen Python programming skills",
+    "Received positive feedback for timely task completion and proactive communication"
+  ]
   },
   {
     id: 3,
-    role: "Frontend Developer Intern",
-    company: "StartupHub",
-    duration: "Jun 2017 - Feb 2018",
-    description: "Assisted in developing user interfaces for startup products.",
-    responsibilities: [
-      "Developed responsive UI components using HTML, CSS, and JavaScript",
-      "Fixed bugs and improved performance of existing applications",
-      "Participated in daily stand-ups and sprint planning",
-      "Collaborated with backend developers to integrate APIs",
-    ],
+    role: "Freelance Software Developer",
+  company: "Self-Employed",
+  duration: "2023 - Present",
+  description: "Specialized in AI-powered bots, intelligent agents, and automation systems, delivering scalable solutions for diverse clients.",
+  responsibilities: [
+    "Developed AI-powered bots and automation systems using Python and Node.js, solving complex real-world problems",
+    "Built web-based interfaces with React and Next.js, ensuring seamless user experiences",
+    "Utilized AI/ML tools like TensorFlow and scikit-learn to enhance project functionality",
+    "Mentored junior developers, providing guidance on best practices and code quality",
+    "Collaborated with clients and teams to deliver high-impact, scalable solutions",
+    "Completed student assignment projects, earning consistent positive feedback for technical expertise"
+  ]
   },
 ]
 

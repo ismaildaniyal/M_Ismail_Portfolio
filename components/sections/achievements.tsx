@@ -1,91 +1,106 @@
 "use client"
 
 import type React from "react"
-
 import { SectionHeading } from "@/components/ui/section-heading"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Award, BookOpen, Code, Trophy } from "lucide-react"
+import { Award, BookOpen, Code } from "lucide-react"
 import { motion } from "framer-motion"
 
 const achievements = {
   certifications: [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2022",
-      description: "Validated expertise in designing distributed systems on AWS.",
+      title: "JavaScript Certificate",
+      issuer: "Udemy",
+      date: "2024",
+      description: "Validated core concepts of JavaScript including ES6+, asynchronous programming, and DOM manipulation.",
     },
     {
       id: 2,
-      title: "Google Professional Cloud Developer",
-      issuer: "Google Cloud",
-      date: "2021",
-      description: "Demonstrated ability to build scalable applications using Google Cloud.",
+      title: "Python and Flask",
+      issuer: "Udemy",
+      date: "2024",
+      description: "Demonstrated ability to build and deploy scalable web applications using Python and Flask framework.",
     },
     {
       id: 3,
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB",
-      date: "2020",
-      description: "Proven knowledge of MongoDB application development.",
-    },
-  ],
-  awards: [
-    {
-      id: 1,
-      title: "Hackathon Winner",
-      issuer: "TechCrunch Disrupt",
-      date: "2023",
-      description: "First place for developing an AI-powered accessibility tool.",
-    },
-    {
-      id: 2,
-      title: "Outstanding Contributor",
-      issuer: "Open Source Initiative",
-      date: "2022",
-      description: "Recognized for significant contributions to open-source projects.",
+      title: "Teaching Assistant Certificate",
+      issuer: "FAST-NUCES",
+      date: "2025",
+      description: "Recognized for supporting 350+ students in Data Structures, Algorithms, and Web Development courses.",
     },
   ],
   publications: [
     {
       id: 1,
-      title: "Optimizing React Performance",
+      title: "Diagnostic Reasoning with RAG",
       publisher: "Medium",
-      date: "2023",
-      description: "A comprehensive guide to improving React application performance.",
-      link: "https://medium.com",
+      date: "Apr 7, 2025",
+      description: "Explored how Retrieval-Augmented Generation (RAG) can simulate diagnostic reasoning in medical or decision-making applications.",
+      link: "https://medium.com/@ismailsarfraz/diagnostic-reasoning-with-rag-2644efba1419"
     },
     {
       id: 2,
-      title: "Microservices Architecture Patterns",
-      publisher: "Dev.to",
-      date: "2022",
-      description: "Exploring common patterns in microservices architecture.",
-      link: "https://dev.to",
+      title: "EchoCaption: From Audio to AI-Generated Video",
+      publisher: "Medium",
+      date: "Mar 16, 2025",
+      description: "Introduced a system that converts spoken content into synchronized video with captions using AI tools.",
+      link: "https://medium.com/@ismailsarfraz/echocaption-from-audio-to-ai-generated-video-11c1690af69c"
     },
+    {
+      id: 3,
+      title: "Automating Code Generation: Pseudocode to C++ with Transformers",
+      publisher: "Medium",
+      date: "Feb 27, 2025",
+      description: "Detailed the process of using transformer models to generate C++ code from natural language pseudocode.",
+      link: "https://medium.com/@ismailsarfraz/heres-an-optimized-version-tailored-for-a-medium-post-with-a-more-engaging-and-concise-writing-72a15c649863"
+    },
+    {
+      id: 4,
+      title: "AI-Powered Lyrics-to-Song Generator with Whisper & Gemini AI",
+      publisher: "Medium",
+      date: "Feb 14, 2025",
+      description: "Built an end-to-end system that converts written lyrics into sung audio using speech synthesis and LLMs.",
+      link: "https://medium.com/@ismailsarfraz/ai-powered-lyrics-to-song-generator-using-whisper-gemini-ai-and-streamlit-d46fdfa7b5d2"
+    },
+    {
+      id: 5,
+      title: "Automating Meeting Notes with AI",
+      publisher: "Medium",
+      date: "Feb 14, 2025",
+      description: "Demonstrated an AI workflow that listens to meetings, summarizes key points, and identifies action items in real time.",
+      link: "https://medium.com/@ismailsarfraz/automating-meeting-notes-c7d2ee8a6b3c"
+    },
+    {
+      id: 6,
+      title: "Real-time Language Learning Assistant with Streamlit",
+      publisher: "Medium",
+      date: "Feb 2025",
+      description: "Showcased a Streamlit-based app that translates, speaks, and quizzes users for immersive language learning.",
+      link: "https://medium.com/@ismailsarfraz/real-time-language-learning-assistant-with-streamlit-3a2fd77dc603"
+    }
   ],
   contributions: [
     {
       id: 1,
-      title: "React",
-      description: "Contributed performance improvements and bug fixes.",
-      link: "https://github.com/facebook/react",
+      title: "Solar Cell Simulation with PVlib",
+      description: "Contributed simulation logic and visualizations for analyzing photovoltaic system performance, including effects of shading and tilt using PVlib and Jupyter Notebooks.",
+      link: "https://github.com/ismaildaniyal/solar-cell-shading-loss.git"
     },
     {
       id: 2,
-      title: "TypeScript",
-      description: "Added new type definitions and improved documentation.",
-      link: "https://github.com/microsoft/typescript",
+      title: "Phone Number Location Tracker",
+      description: "Collaborated on a Python-based geolocation tool that tracks mobile number regions using open-source libraries for education and privacy-safe demonstrations.",
+      link: "https://github.com/ismaildaniyal/Phone-number-location-tracker-using-python.git"
     },
     {
       id: 3,
-      title: "Next.js",
-      description: "Implemented new features and fixed critical bugs.",
-      link: "https://github.com/vercel/next.js",
-    },
-  ],
+      title: "Railway Reservation System",
+      description: "Built a web-based railway ticketing platform in a 3-member team with secure login, seat booking, and real-time train tracking. Designed using Node.js, MongoDB, and JWT.",
+      link: "https://github.com/ismaildaniyal/Railway-systems.git"
+    }
+  ]
 }
 
 export default function Achievements() {
@@ -98,14 +113,10 @@ export default function Achievements() {
         />
 
         <Tabs defaultValue="certifications" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 mb-8">
             <TabsTrigger value="certifications">
               <Award className="h-4 w-4 mr-2" />
               Certifications
-            </TabsTrigger>
-            <TabsTrigger value="awards">
-              <Trophy className="h-4 w-4 mr-2" />
-              Awards
             </TabsTrigger>
             <TabsTrigger value="publications">
               <BookOpen className="h-4 w-4 mr-2" />
@@ -132,28 +143,6 @@ export default function Achievements() {
                     subtitle={cert.issuer}
                     date={cert.date}
                     description={cert.description}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="awards" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {achievements.awards.map((award, index) => (
-                <motion.div
-                  key={award.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <AchievementCard
-                    title={award.title}
-                    subtitle={award.issuer}
-                    date={award.date}
-                    description={award.description}
-                    icon={<Trophy className="h-8 w-8 text-primary" />}
                   />
                 </motion.div>
               ))}
@@ -258,4 +247,3 @@ function AchievementCard({
     </Card>
   )
 }
-

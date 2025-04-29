@@ -9,15 +9,15 @@ const skills = {
   frontend: [
     { name: "HTML/CSS", level: 90 },
     { name: "JavaScript", level: 85 },
-    { name: "React", level: 75 },
+    { name: "React", level: 85 },
     { name: "Next.js", level: 70 },
     { name: "Tailwind CSS", level: 70 },
-    { name: "C#", level: 70 },
+    { name: "C#", level: 75 },
   ],
   backend: [
     { name: "Node.js", level: 80 },
     { name: "Express", level: 75 },
-    { name: "Python", level: 70 },
+    { name: "Python", level: 80 },
     { name: "C++", level: 90 },
     { name: "Django", level: 85 },
     { name: "REST API", level: 85 },
@@ -28,11 +28,40 @@ const skills = {
     { name: "MySQL", level: 85 },
     { name: "Firebase", level: 50 },
   ],
-  devops: [
+  tools: [
     { name: "Git", level: 85 },
-    { name: "Docker", level: 70 },
-    { name: "CI/CD", level: 70 },
+    { name: "Docker", level: 75 },
+    { name: "CI/CD", level: 75 },
+    { name: "Digital Ocian", level: 70 },
+    { name: "Figma", level: 70 },
+    { name: "VS Code", level: 90 },
+    { name: "Jupyter Notebook", level: 80 },
+    { name: "PyCharm", level: 80 },
+    { name: "Linux", level: 80 },
     { name: "Vercel", level: 80 },
+  ],
+  ai: [
+    { name: "TensorFlow", level: 85 },
+    { name: "PyTorch", level: 80 },
+    { name: "Keras", level: 80 },
+    { name: "OpenCV", level: 75 },
+    { name: "Scikit-learn", level: 85 },
+    { name: "Pandas", level: 90 },
+    { name: "NumPy", level: 90 }
+  ],
+  generativeAi: [
+    { name: "Hugging Face Transformers", level: 75 },
+    { name: "Whisper", level: 70 },
+    { name: "DeepSeek", level: 85 },
+    { name: "RAG", level: 90 },
+    { name: "Stable Diffusion", level: 65 },
+    { name: "GPT (OpenAI API)", level: 80 }
+  ],
+  automation: [
+    { name: "Selenium", level: 80 }, 
+    { name: "BeautifulSoup", level: 80 },
+    { name: "DrissionPage", level: 75 } ,
+    { name: "Scrapy", level: 80 },
   ],
   soft: [
     "Problem Solving",
@@ -55,8 +84,8 @@ export default function Skills() {
         />
 
         <Tabs defaultValue="frontend" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
-            {["frontend", "backend", "database", "devops", "soft"].map((tab) => (
+          <TabsList className="grid w-full grid-cols-4 md:grid-cols-8 mb-10">
+            {["frontend", "backend", "database", "Tools","AI/ML", "GenrativeAI", "Automation", "soft"].map((tab) => (
               <TabsTrigger key={tab} value={tab} className="relative overflow-hidden group">
                 <span className="capitalize">{tab}</span>
                 <motion.div
@@ -80,10 +109,18 @@ export default function Skills() {
             <SkillBars skills={skills.database} />
           </TabsContent>
 
-          <TabsContent value="devops" className="space-y-6">
-            <SkillBars skills={skills.devops} />
+          <TabsContent value="Tools" className="space-y-6">
+            <SkillBars skills={skills.tools} />
           </TabsContent>
-
+          <TabsContent value="AI/ML" className="space-y-6">
+            <SkillBars skills={skills.ai} />
+          </TabsContent>
+          <TabsContent value="GenrativeAI" className="space-y-6">
+            <SkillBars skills={skills.generativeAi} />
+          </TabsContent>
+          <TabsContent value="Automation" className="space-y-6">
+            <SkillBars skills={skills.automation} />
+          </TabsContent>
           <TabsContent value="soft" className="space-y-6">
             <div className="flex flex-wrap gap-2">
               {skills.soft.map((skill, index) => (

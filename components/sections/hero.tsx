@@ -73,7 +73,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-             I specialize in building accessible, user-friendly web applications using modern technologies like React, Next.js, TensorFlow, and Docker. <br />Passionate about solving complex problems with AI, Machine Learning, and Generative AI, and delivering innovative solutions through seamless collaboration and technical excellence.
+             I specialize in building accessible, user-friendly web applications using modern technologies like React, Next.js, and Docker. <br />Passionate about solving complex problems with AI, Machine Learning, and Generative AI, and delivering innovative solutions through seamless collaboration and technical excellence.
              </motion.p>
         </motion.div>
 
@@ -100,7 +100,7 @@ export default function Hero() {
             </a>
           </Button>
           <Button asChild variant="outline" size="lg" className="group">
-            <a href="/public/M_Ismail_Daniyal CV.pdf" download>
+            <a href="/Muhammad Ismail Daniyal_.pdf" download>
               <Download className="mr-2 h-4 w-4 transition-transform group-hover:scale-125" />
               Download Resume
             </a>
